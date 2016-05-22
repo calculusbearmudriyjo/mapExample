@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: InfoTeksTest
+Implementation-Version: 1.0-SNAPSHOT
+Built-By: mudri
+Specification-Title: InfoTeksTest
+Implementation-Vendor-Id: InfoTeksTest
+Created-By: Apache Maven 3.0.5
+Build-Jdk: 1.8.0_65
+Specification-Version: 1.0-SNAPSHOT
+

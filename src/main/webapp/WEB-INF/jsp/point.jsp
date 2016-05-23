@@ -39,8 +39,8 @@
         });
 
         myPlacemark = new ymaps.Placemark([${it.latitude}, ${it.longitude}], {
-            hintContent: ${it.latitude},
-            balloonContent: ${it.latitude}
+            hintContent: ${it.title},
+            balloonContent: ${it.title}
         });
 
         myMap.geoObjects.add(myPlacemark);

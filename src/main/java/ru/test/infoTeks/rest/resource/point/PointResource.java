@@ -1,6 +1,8 @@
 package ru.test.infoTeks.rest.resource.point;
 
 import org.glassfish.jersey.server.mvc.Viewable;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import ru.test.infoTeks.rest.dao.entities.PointEntity;
@@ -19,6 +21,7 @@ import java.util.List;
 @Component
 @Path("/")
 public class PointResource {
+    private static final Logger logger = LoggerFactory.getLogger(PointResource.class);
 
     @Autowired
     private PointServiceDbAccessImpl pointService;

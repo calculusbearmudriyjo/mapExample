@@ -14,8 +14,10 @@
 <div class="col-md-10">
     <h1>Map example:</h1>
     <div class="col-md-6">
+        <p>List point:</p>
         <ul class="list-group" id="groupPoint">
         </ul>
+        <p>Add point:</p>
         <form role="form" id="form">
             <div class="form-group">
                 <label for="title">Enter title point:</label>

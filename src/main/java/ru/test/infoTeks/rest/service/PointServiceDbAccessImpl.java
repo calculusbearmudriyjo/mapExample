@@ -1,5 +1,7 @@
 package ru.test.infoTeks.rest.service;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import ru.test.infoTeks.rest.dao.PointDao;
 import ru.test.infoTeks.rest.dao.entities.PointEntity;
@@ -13,6 +15,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PointServiceDbAccessImpl implements PointService {
+
+    private static final Logger logger = LoggerFactory.getLogger(PointServiceDbAccessImpl.class);
 
     @Autowired
     private PointDao pointDao;

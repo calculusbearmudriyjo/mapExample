@@ -94,6 +94,10 @@
 
     $(document).ready(function() {
         $('[type="submit"]').on('click', function() {
+
+            $('#title').css('border', '1px solid #ccc;');
+            $('#address').css('border', '1px solid #ccc;');
+
             var lon = $('#long').val() || '';
             var lat = $('#lat').val() || '';
             var title = $('#title').val() || '';
@@ -107,6 +111,12 @@
                     $('#form')[0].reset();
                     loadPoint();
                 })
+            } else {
+                if(title.length < 1) {
+                    $('#title').css('border', '1px solid red');
+                } else {
+                    $('#address').css('border', '1px solid red');
+                }
             }
             return false;
         })
